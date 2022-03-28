@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <div class="container">
+    <header class="center">
+        <h1>Welcome to our survey form</h1>
+        <p>Complete all form and we will be touch</p>
+    </header>
+    <form id="form">
+        <div class="form-group">
+            <label id="Name-label" for="Name">Name</label>
+            <input 
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your full name"
+            required />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number">Age</label>
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="14"
+            max="99"
+            class="form-control"
+            placeholder="Age" />
+        </div>
+        <div class="form-group">
+            <label id="date-label" for="date">Select a date</label>
+            <input 
+            type="date"
+            name="date"
+            id="date"
+            class="form-control"
+            placeholder="Text here"
+            required />
+        </div>
+        <div class="form-group">
+            <label id="work-label" for="work">Adress</label>
+            <input 
+            type="text"
+            name="work"
+            id="work"
+            class="form-control"
+            placeholder="Enter your adress"
+            required />
+        </div>
+        <div class="form-group">
+            <p>Occupation Area</p>
+            <select id="dropdown" name="role" class="form-control" required>
+              <option disabled selected value>Select one option</option>
+              <option value="student">Frontend Developer</option>
+              <option value="job">Backend Developer</option>
+              <option value="learner">FullStack Developer</option>
+              <option value="learner">DevOps</option>
+              <option value="preferNo">Web Designer</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+        <div class="form-group">
+            <p><b>Are you currently work?</b></p>
+            <label>
+              <input
+                name="user-recommend"
+                value="definitely"
+                type="radio"
+                class="input-radio"
+                checked
+              />Yes
+            </label>
+            <label>
+              <input
+                name="user-recommend"
+                value="maybe"
+                type="radio"
+                class="input-radio"
+              />No
+            </label>
+          </div>
+          <div class="form-group">
+            <p><b>
+                Programming Languages:</b>
+              <span class="clue">(Check all that apply)</span>
+            </p>
+            <label>
+              <input
+                name="prefer"
+                value="JavaScript"
+                type="checkbox"
+                class="input-checkbox"
+              />JavaScript
+            </label>
+            <label>
+              <input
+                name="prefer"
+                value="Java"
+                type="checkbox"
+                class="input-checkbox"
+              />Java
+            </label>
+            <label>
+              <input
+                name="prefer"
+                value="Python"
+                type="checkbox"
+                class="input-checkbox"
+              />Python
+            </label>
+            <label
+              ><input
+                name="prefer"
+                value="PHP"
+                type="checkbox"
+                class="input-checkbox"
+              />PHP
+            </label>
+            <label>
+              <input
+                name="prefer"
+                value="Cobol"
+                type="checkbox"
+                class="input-checkbox"
+              />Cobol
+            </label>
+            <label
+              ><input
+                name="prefer"
+                value="C"
+                type="checkbox"
+                class="input-checkbox"
+              />C
+            </label>
+            <label>
+              <input
+                name="prefer"
+                value="C++"
+                type="checkbox"
+                class="input-checkbox"
+              />C++
+            </label>
+            <label>
+              <input
+                name="prefer"
+                value="C#"
+                type="checkbox"
+                class="input-checkbox"
+              />C#
+            </label>
+            <label>
+              <input
+                name="prefer"
+                value="Go"
+                type="checkbox"
+                class="input-checkbox"
+              />Go
+            </label>
+            <label>
+              <input
+                name="prefer"
+                value="others"
+                type="checkbox"
+                class="input-checkbox"
+              />Other Languages
+            </label >
+          </div>
+          <div class="form-group">
+            <p><b>Tell somethink more about you, your knowledge and your experiences:</b></p>
+            <textarea
+              id="comments"
+              class="input-textarea"
+              name="comment"
+              placeholder="Enter here..."
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+              <b>Submit</b>
+            </button>
+          </div>
+          <footer>
+              <p class="pft"><b>&copy;&nbsp; Created by Rafael Pola.</b></p>
+          </footer>
+        </div>
+    </form>
+
+</body>
