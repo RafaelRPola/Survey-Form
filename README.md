@@ -1,7 +1,7 @@
 
 # Survey Form
 
-Formulário de pesquisa simples e resposivo, desenvolvido somento com HTML e CSS.
+Formulário de pesquisa simples e responsivo, desenvolvido somente com HTML e CSS.
 
 ## 🛠 Habilidades necessárias
 HTML5, CSS3...
